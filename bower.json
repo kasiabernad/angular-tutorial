@@ -1,0 +1,14 @@
+{
+  "name": "angular-tutorial",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kasiakasprzak/angular",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-mocks": "1.6.x",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "3.3.x"
+  }
+}
