@@ -27,5 +27,12 @@ angular.module('tutorialApp')
       return products;
     }
 
+    ProductFactory.deleteProduct = function(product) {
+      var idx = products.indexOf(product);
+      if (idx >= 0) {
+        products.splice(idx, 1);
+      }
+    };
+
     return ProductFactory;
   });

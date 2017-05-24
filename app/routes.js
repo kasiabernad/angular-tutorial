@@ -8,7 +8,7 @@ angular.module('tutorialApp')
     $stateProvider
       .state('productList', {
         url: '/productList',
-        templateUrl: 'views/product_list.html'
+        templateUrl: 'views/index.html'
       })
       .state('search', {
         url: '/search',
