@@ -8,7 +8,7 @@
   "dependencies": {
     "angular": "1.6.x",
     "angular-mocks": "1.6.x",
-    "angular-ui-router": "~0.2.15",
+    "angular-route": "1.6.x",
     "bootstrap": "3.3.x"
   }
 }

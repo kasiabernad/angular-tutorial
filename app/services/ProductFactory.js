@@ -25,13 +25,26 @@ angular.module('tutorialApp')
 
     ProductFactory.getProducts = function() {
       return products;
-    }
+    };
+
+    ProductFactory.getProduct = function(productId) {
+      var index = products.map(item => item.id).indexOf(productId);
+      if (index >= 0){
+        return products[index];
+      }
+
+      return null;
+    };
 
     ProductFactory.deleteProduct = function(product) {
       var idx = products.indexOf(product);
       if (idx >= 0) {
         products.splice(idx, 1);
       }
+    };
+
+    ProductFactory.createProduct = function(product) {
+      products.push(product);
     };
 
     return ProductFactory;

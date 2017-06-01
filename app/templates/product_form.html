@@ -1,0 +1,19 @@
+<div>
+  <form novalidate name="form" class="simple-form">
+    <label>Name: <input type="text" ng-model="Formctr.product.name" name='pName' required="" /></label><br />
+    <div ng-show="form.$submitted || form.pName.$touched">
+      <div ng-show="form.pName.$error.required">Product name is required.</div>
+    </div>
+    <label>Description: <input type="text" ng-model="Formctr.product.description" name='pDescription' required="" /></label><br />
+    <div ng-show="form.$submitted || form.pDescription.$touched">
+      <div ng-show="form.pDescription.$error.required">Product description is required.</div>
+    </div>
+    <label>Price: <input type="number" ng-model="Formctr.product.price" name='pPrice' required=""/></label><br />
+    <div ng-show="form.$submitted || form.pPrice.$touched">
+      <div ng-show="form.pPrice.$error.required">Product price is required.</div>
+      <div ng-show="form.pPrice.$error.number">Product price must be a number</div>
+    </div>
+    <input type="button" ng-click="Formctr.reset()" value="Reset" />
+    <input type="submit" ng-click="Formctr.create(form, Formctr.product)" value="Save" />
+  </form>
+</div>

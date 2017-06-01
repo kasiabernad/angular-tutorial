@@ -1,0 +1,19 @@
+<span ng-switch="Editctrl.editMode">
+  <span ng-switch-default>
+    Name: {{Editctrl.product.name}}
+    <br />
+    Description: {{Editctrl.product.description}}
+    <br />
+    Price: {{Editctrl.product.price}}
+    <br />
+  </span>
+  <span ng-switch-when='true'>
+    Name: <input type="text" ng-model="Editctrl.product.name">
+    <br />
+    Description: <input type="text" ng-model="Editctrl.product.description">
+    <br />
+    Price: <input type="number" ng-model="Editctrl.product.price">
+    <br />
+  </span>
+</span>
+<button ng-click="Editctrl.handleModeChange()">{{Editctrl.editMode ? 'Save' : 'Edit'}}</button>

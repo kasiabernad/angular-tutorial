@@ -1,8 +1,9 @@
-function ManageProductController($scope) {
+function ManageProductController($location) {
   var Managectr = this;
 
   Managectr.delete = function() {
     Managectr.onDelete({ product: Managectr.product });
+    $location.path('/products');
   };
 }
 
@@ -12,6 +13,6 @@ angular.module('tutorialApp').component('manageProduct', {
   controllerAs: 'Managectr',
   bindings: {
     product: '<',
-    onDelete: '&'
+    onDelete: '&',
   }
 });

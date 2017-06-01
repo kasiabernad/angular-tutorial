@@ -1,4 +1,10 @@
+<div> Product Form
+<product-form on-create="ctr.createProduct(product)">
+</product-form>
+</div>
+
 <manage-product ng-repeat="product in ctr.productsList"
                 product="product"
-                on-delete="ctr.deleteProduct(product)">
+                on-delete="ctr.deleteProduct(product)"
+                on-update="ctr.updateProduct(product)">
 </manage-product>

@@ -5,11 +5,13 @@
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="routes.js"></script>
+    <script src="components/editable-product.js"></script>
     <script src="components/product-list.js"></script>
     <script src="components/manage-product.js"></script>
+    <script src="components/product-form.js"></script>
 
     <script src="services/ProductFactory.js"></script>
     <script src="services/ProductService.js"></script>
@@ -21,7 +23,7 @@
     <header> THIS IS SOME HEADER </header>
     <hr>
     <div class="view-container">
-      <div ui-view></div>
+      <div ng-view></div>
     </div>
   </body>
 </html>
